@@ -130,9 +130,6 @@ bot.on("ready", function (evt) {
   logger.info(bot.username + " - (" + bot.id + ")");
 });
 
-//procfile
-worker: node bot.js
-
 
 bot.on("message", function (user, userID, channelID, message, evt) {
 

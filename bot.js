@@ -103,7 +103,7 @@ function shuffle() {
 
 console.log(bots);
 
-var BOT_TOKEN;
+
 
 var api = new Habitica({
   id: "",
@@ -120,7 +120,7 @@ logger.add(new logger.transports.Console, {
 logger.level = "debug";
 // Initialize Discord Bot
 var bot = new Discord.Client({
- token: BOT_TOKEN,
+ token: process.env.BOT_TOKEN,
  autorun: true
 });
 
@@ -219,7 +219,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
                 } else {
                   bot.sendMessage({
                     to: channelID,
-                    message: "!Habitica check 15 (or less)"
+                    message: "!H vote 15 (or less)"
                   });
                 }
               } else if (args[1] === "help"){

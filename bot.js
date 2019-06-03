@@ -168,9 +168,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
 
 
                   for (var y = 0 ; y < arr.length; y++){
-                    
-                    var myInt = setInterval(function () {
-                          bots.forEach(o => {
+                    bots.forEach(o => {
                       if (o.id === arr[y]) {
                         var api = new Habitica({
                           id: o.user,
@@ -210,9 +208,6 @@ bot.on("message", function (user, userID, channelID, message, evt) {
                         // Post end
                       }
                     }
-                    }, 500);
-
-                  
                   });
                           } else {
                             console.log("o: " + o);
@@ -224,7 +219,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
                 } else {
                   bot.sendMessage({
                     to: channelID,
-                    message: "!Habitica vote 15 (or less)"
+                    message: "!Habitica check 15 (or less)"
                   });
                 }
               } else if (args[1] === "help"){

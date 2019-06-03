@@ -17,7 +17,7 @@ The following technologies shall be used in the making of this bot:
 
 Sadly, the Habitica API doesn’t have an endpoint to fetch messages made by a certain user. This means Alex has to manually inform the bot whenever he sends a message somewhere. The `!habitica check` command will enable him to do this, used as follows:
 
-    !habitica check [group id] [?number of upvotes]
+    !habitica vote (amount) (username)
 
 The bot will fetch a list of messages made in that group, find the last one made by Alex and upvote it a certain number of times. The bot shall save the IDs of messages it upvoted in a file.
 

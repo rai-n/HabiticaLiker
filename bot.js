@@ -103,7 +103,7 @@ function shuffle() {
 
 console.log(bots);
 
- 
+var BOT_TOKEN;
 
 var api = new Habitica({
   id: "",
@@ -120,7 +120,7 @@ logger.add(new logger.transports.Console, {
 logger.level = "debug";
 // Initialize Discord Bot
 var bot = new Discord.Client({
- token: process.env.BOT_TOKEN,
+ token: BOT_TOKEN,
  autorun: true
 });
 

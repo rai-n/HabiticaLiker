@@ -138,7 +138,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
     var cmd = args[0];
     var max = args[2];
     var usernameVote;
-    if (args[3] === null){
+    if (args[3] !== ""){
       usernameVote = "AlTheGreat";
     } else {
       usernameVote = args[3];
@@ -250,7 +250,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
               else {
                bot.sendMessage({
                 to: channelID,
-                message: "Invalid command. Try !Habitica help"
+                message: "Invalid command. Try !H help"
               });
              }
 

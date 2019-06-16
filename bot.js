@@ -184,8 +184,12 @@ bot.on("message", function (user, userID, channelID, message, evt) {
                               var data = res.data
 
                               for(let i = 0; i < 10 ; i++){
+
                                 if (data[i].username === usernameVote){
-                        //Post start
+
+
+                                setTimeout(function() {
+                              //Post start
                         chatID = data[i]._id; 
 
                         var postID = "/groups/e184b286-b369-46c9-ab55-054c3368af33/chat/" + chatID + "/like";
@@ -206,6 +210,11 @@ bot.on("message", function (user, userID, channelID, message, evt) {
                           }); 
                         });
                         // Post end
+                                }, 3000);
+                       
+
+
+
                       }
                     }
                   });

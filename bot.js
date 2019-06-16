@@ -206,7 +206,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
 
                             console.log("The file was saved!");
 
-  
+                            bot.sendMessage({to:channelID, message: "Voted id: " + chatID + "\n" });
                           }); 
                         });
                         // Post end
@@ -225,11 +225,6 @@ bot.on("message", function (user, userID, channelID, message, evt) {
                           } 
                         });
                   }
-                  bot.sendMessage({
-                  to: channelID,
-                  message: "Voting completed..."
-                });
-
                 } else {
                   bot.sendMessage({
                     to: channelID,

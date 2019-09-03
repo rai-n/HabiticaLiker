@@ -3,7 +3,7 @@ NodeJS based comment liker bot for Habitica.
 
 Utilises Habitica thin wrapper
 
-Summary: The *Habitica Upvote Bot* is a Habitica bot that upvotes posts made by Alex a certain amount of times and following defined criteria. Communication between the Alex and the bot will be done on Discord.
+Summary: The *Habitica Upvote Bot* is a Habitica bot that upvotes posts made by N a certain amount of times and following defined criteria. 
 
 ## Technologies used
 
